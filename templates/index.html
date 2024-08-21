@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="images/fav.png" rel="icon" type="image/png">
+	<link href="{{ url_for('static', filename='images/fav.png') }}" rel="icon" type="image/png">
 	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css', v=time.time()) }}">
 	<meta property="og:image" content="images/fav.png" />
 	<title>Yael</title>
@@ -15,12 +15,6 @@
 		<div class="form-container">
 			<div class="admin-avtar">
 				<h1>Youtube to MP3</h1>
-			</div>
-
-			<div class="signin-status d-none">
-				<p id="status-desc">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
 			</div>
 
 			<script>
